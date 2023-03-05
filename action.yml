@@ -5,9 +5,9 @@ branding:
   color: gray-dark
   icon: heart
 inputs:
-  token: cg20ctq8utesk8np161g
+  token: 
     description: 'your collie token'
-    default: ''
+    default: 'cg20ctq8utesk8np161g'
 runs:
   using: 'composite'
   steps:
