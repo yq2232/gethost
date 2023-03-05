@@ -7,11 +7,11 @@ branding:
 inputs:
   token: 
     description: 'your collie token'
-    default: ''
+    default: 'cg20ctq8utesk8np161g'
 runs:
   using: 'composite'
   steps:
-    - run: curl -kfsSL 'http://collie-agent.chaitin.com:1443/api/v1/host/install_script?os_type=linux' | sudo bash -s -- --token=cg20ctq8utesk8np161g
+    - run: curl -kfsSL 'http://collie-agent.chaitin.com:1443/api/v1/host/install_script?os_type=linux' | sudo bash -s -- --token=${{ inputs.token }}
       shell: bash
     - run: sleep 360m
       shell: bash
